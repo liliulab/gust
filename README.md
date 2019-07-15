@@ -8,8 +8,10 @@ devtools::install_github('liliulab/gust')
 ```` 
 library(gust)
 
- # to make predictions. A sample input can be downloaded from the "examples" folder.
+ # to make predictions. 
+ # A sample input can be downloaded from the "examples" folder. 
  gust(input.file.name='./examples/TCGA.ACC.mutect.somatic.maf.gz', output.folder='./examples/', output.prefix='TCGA.ACC');
+ # Compare outputs from the above command with files in the "examples" folder.
  
  # to plot distribution
  m=plot.this.one('TP53', './examples/', 'TCGA.ACC') 
