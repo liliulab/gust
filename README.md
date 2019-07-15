@@ -1,19 +1,22 @@
 ## GUST - Genes Under Selection in Tumors
 GUST predicts oncogenes (OGs), tumor suppressor gens (TSGs) and passenger genes (PGs) using somatic SNVs detected in a collection of tumors. It can classify single genes from targetted sequencing or multiple genes from whole-exome sequencing. 
 
-## Install. Be patient. It may take some time.
-devtools::install_github('liliulab/gust')
+## Install. 
+````
+# Be patient. It may take some time.
+ devtools::install_github('liliulab/gust')
+````
 
 ## Usage
 ```` 
 library(gust)
 
- # to make predictions. 
- # A sample input can be downloaded from the "examples" folder. 
+# to make predictions. 
+# A sample input can be downloaded from the "examples" folder. 
  gust(input.file.name='./examples/TCGA.ACC.mutect.somatic.maf.gz', output.folder='./examples/', output.prefix='TCGA.ACC');
- # Compare outputs from the above command with files in the "examples" folder.
+# Compare outputs from the above command with files in the "examples" folder.
  
- # to plot distribution
+# to plot distribution
  m=plot.this.one('TP53', './examples/', 'TCGA.ACC') 
 ````
 
