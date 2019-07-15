@@ -4,7 +4,7 @@ Version: 0.1
 Authors@R: person("Li", "Liu", email = "liliu@asu.edu", role = c("aut", "cre"))
 Description: Classify oncogenes, tumor suppressor genes and passenger genes from somatic variants.
 Depends: R (>= 3.3.3)  
-Imports: stringr, randomForest
+Imports: scales, stringr, randomForest
 License: open source
 Encoding: UTF-8
 LazyData: true

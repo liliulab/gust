@@ -3,6 +3,7 @@
 # Import package dependencies
 import(randomForest)
 import(stringr)
+import(scales)
 
 # export functions for users
 export(gust)
