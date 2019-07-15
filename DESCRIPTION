@@ -1,4 +1,4 @@
-Package: GUST
+Package: gust
 Title: Genes Under Selection In Tumors
 Version: 0.1
 Authors@R: person("Li", "Liu", email = "liliu@asu.edu", role = c("aut", "cre"))
