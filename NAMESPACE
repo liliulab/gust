@@ -6,3 +6,16 @@ import(stringr)
 
 # export functions for users
 export(gust)
+export(initialize.gust)
+export(find.outliers)
+export(parse.aggregated.mut)
+export(compute.selection.stats)
+export(compute.spatial.stats)
+export(compute.fitch.stats)
+export(append.info)
+export(reformat)
+export(make.prediction)
+export(check.gene.mut)
+export(plot.this.one)
+export(plot.multiple)
+
