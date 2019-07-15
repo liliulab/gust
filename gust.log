@@ -1,0 +1,335 @@
+Loading GUST
+Updating GUST documentation
+Loading GUST
+randomForest 4.6-14
+Type rfNews() to see new features/changes/bug fixes.
+initializing ...
+finding outliers ...
+     TCGA/TCGA.BLCA.mutect.0e239d8f-47b0-4e47-9716-e9ecc87605b9.DR-10.0.somatic.maf.gz ...initializing ...
+finding outliers ...
+     TCGA/TCGA.SKCM.mutect.4b7a5729-b83e-4837-9b61-a6002dce1c0a.DR-10.0.somatic.maf.gz ...initializing ...
+finding outliers ...
+     TCGA/TCGA.STAD.mutect.c06465a3-50e7-46f7-b2dd-7bd654ca206b.DR-10.0.somatic.maf.gz ...initializing ...
+finding outliers ...
+     TCGA/TCGA.LUAD.mutect.0458c57f-316c-4a7c-9294-ccd11c97c2f9.DR-10.0.somatic.maf.gz ...initializing ...
+finding outliers ...
+     TCGA/TCGA.LUSC.mutect.95258183-63ea-4c97-ae29-1bae9ed06334.DR-10.0.somatic.maf.gz ...initializing ...
+finding outliers ...
+     TCGA/TCGA.UCEC.mutect.d3fa70be-520a-420e-bb6d-651aeee5cb50.DR-10.0.somatic.maf.gz ...134513 lines
+     mean ( 190 ), std ( 2 ), cutoffs ( 20.02422  -  1824.776 )
+     hypo- ( 4 ) ... hyper ( 1 )
+parsing aggregated calls ...
+    TCGA/TCGA.BLCA.mutect.0e239d8f-47b0-4e47-9716-e9ecc87605b9.DR-10.0.somatic.maf.gz ...181116 lines
+     mean ( 254 ), std ( 2 ), cutoffs ( 65.36527  -  1062.811 )
+     hypo- ( 13 ) ... hyper ( 11 )
+parsing aggregated calls ...
+    TCGA/TCGA.LUSC.mutect.95258183-63ea-4c97-ae29-1bae9ed06334.DR-10.0.somatic.maf.gz ...208180 lines
+     mean ( 187 ), std ( 3 ), cutoffs ( 9.408543  -  4173.404 )
+     hypo- ( 8 ) ... hyper ( 0 )
+parsing aggregated calls ...
+    TCGA/TCGA.LUAD.mutect.0458c57f-316c-4a7c-9294-ccd11c97c2f9.DR-10.0.somatic.maf.gz ...213144 lines
+     mean ( 173 ), std ( 4 ), cutoffs ( 14.14125  -  1689.03 )
+     hypo- ( 7 ) ... hyper ( 21 )
+parsing aggregated calls ...
+    TCGA/TCGA.STAD.mutect.c06465a3-50e7-46f7-b2dd-7bd654ca206b.DR-10.0.somatic.maf.gz ...134513 lines
+    mutations after removing outlier samples 129485 
+    coding mutations 110435 ; 181116 lines
+    mutations after removing outlier samples 160383 
+    coding mutations 137130 ; 392571 lines
+     mean ( 346 ), std ( 4 ), cutoffs ( 17.70622  -  8149.008 )
+     hypo- ( 8 ) ... hyper ( 1 )
+parsing aggregated calls ...
+    TCGA/TCGA.SKCM.mutect.4b7a5729-b83e-4837-9b61-a6002dce1c0a.DR-10.0.somatic.maf.gz ...208180 lines
+    mutations after removing outlier samples 208134 
+    coding mutations 179140 ; 213144 lines
+    mutations after removing outlier samples 139920 
+    coding mutations 120988 ; 392571 lines
+    mutations after removing outlier samples 371183 
+    coding mutations 320153 ; 886377 lines
+     mean ( 220 ), std ( 5 ), cutoffs ( 1.393776  -  28983.66 )
+     hypo- ( 1 ) ... hyper ( 0 )
+parsing aggregated calls ...
+    TCGA/TCGA.UCEC.mutect.d3fa70be-520a-420e-bb6d-651aeee5cb50.DR-10.0.somatic.maf.gz ...886377 lines
+    mutations after removing outlier samples 886376 
+!!!!!!!!!!!!!!!!!!! Error !!!!!!!!!!!!! CHECK FS INDELS!!!!!!!!!
+    coding mutations 637578 ;  with matching seq 109267 
+    unmatched mutations: 1168 in 321 genes, max cnt in unmatched genes ( FCGBP : 42 )
+    total samples after removing outliers 407 
+ with matching seq 119644 
+    unmatched mutations: 1344 in 330 genes, max cnt in unmatched genes ( FCGBP : 54 )
+    total samples after removing outliers 409 
+ with matching seq 135210 
+    unmatched mutations: 1920 in 292 genes, max cnt in unmatched genes ( FCGBP : 77 )
+    total samples after removing outliers 467 
+    mutations by sample 78537 x 407 ;unique mutations 107490 ;unique genes 16866 
+computing somatic selection ...
+    folder output// ... genes.samples: 78537 ; summary.mut: 107490 ; map: 16866 ; data.all: 78537 
+    processing ...    mutations by sample 83708 x 409 ;unique mutations 114915 ;    mutations by sample 91146 x 467 ;unique mutations 133340 ;unique genes 16717 
+computing somatic selection ...
+    folder output// ... genes.samples: 83708 ; summary.mut: 114915 ; map: 16717 ; data.all: 83708 
+    processing ... with matching seq 176598 
+    unmatched mutations: 2542 in 386 genes, max cnt in unmatched genes ( RYR3 : 71 )
+    total samples after removing outliers 559 
+unique genes 16690 
+computing somatic selection ...
+    folder output// ...1000 ... genes.samples: 91146 ; summary.mut: 133340 ; map: 16690 ; data.all: 91146 
+    processing ...1000 ...2000 ...1000 ...2000 ...    mutations by sample 106372 x 559 ;unique mutations 174103 ;3000 ...2000 ...unique genes 17102 
+computing somatic selection ...
+    folder output// ... genes.samples: 106372 ; summary.mut: 174103 ; map: 17102 ; data.all: 106372 
+    processing ...3000 ... with matching seq 315452 
+    unmatched mutations: 4701 in 305 genes, max cnt in unmatched genes ( DNAH10 : 195 )
+    total samples after removing outliers 458 
+3000 ...4000 ...1000 ...4000 ...4000 ...5000 ...    mutations by sample 110298 x 458 ;2000 ...unique mutations 289397 ;5000 ...unique genes 17492 
+computing somatic selection ...
+    folder output// ... genes.samples: 110298 ; summary.mut: 289397 ; map: 17492 ; data.all: 110298 
+    processing ...5000 ...6000 ...3000 ...6000 ...6000 ...1000 ...7000 ...4000 ...7000 ...7000 ...8000 ...2000 ...5000 ...8000 ...8000 ... with matching seq 629046 
+9000 ...    unmatched mutations: 8532 in 1579 genes, max cnt in unmatched genes ( DNAH10 : 314 )
+    total samples after removing outliers 529 
+3000 ...9000 ...6000 ...9000 ...10000 ...10000 ...7000 ...4000 ...10000 ...11000 ...11000 ...8000 ...5000 ...11000 ...12000 ...12000 ...9000 ...6000 ...12000 ...13000 ...13000 ...10000 ...13000 ...7000 ...    mutations by sample 236106 x 529 ;unique mutations 582680 ;14000 ...14000 ...11000 ...unique genes 18518 
+computing somatic selection ...
+    folder output// ... genes.samples: 236106 ; summary.mut: 582680 ; map: 18518 ; data.all: 236106 
+    processing ...14000 ...8000 ...15000 ...15000 ...12000 ...1000 ...15000 ...16000 ...16000 ...9000 ...13000 ...16000 ...2000 ...
+computing spatial distribution statistics ...
+
+computing spatial distribution statistics ...
+10000 ...
+computing spatial distribution statistics ...
+computing conservational statistics ...
+14000 ...3000 ...computing conservational statistics ...
+computing conservational statistics ...
+appending somatic selection, spatial distribution and conservation stats ...
+    selection data ( 16716 )
+    spatial data ( 16714 )
+    conservation data ( 13987 )
+reformatting ...
+making predictions ...
+15000 ...11000 ...appending somatic selection, spatial distribution and conservation stats ...
+    selection data ( 16865 )
+    spatial data ( 16865 )
+    conservation data ( 14305 )
+reformatting ...
+making predictions ...
+initializing ...
+finding outliers ...
+     TCGA/TCGA.KIRP.mutect.1ab98b62-5863-4440-84f9-3c15d476d523.DR-10.0.somatic.maf.gz ...23765 lines
+     mean ( 59 ), std ( 2 ), cutoffs ( 14.44063  -  265.0161 )
+     hypo- ( 7 ) ... hyper ( 0 )
+parsing aggregated calls ...
+    TCGA/TCGA.KIRP.mutect.1ab98b62-5863-4440-84f9-3c15d476d523.DR-10.0.somatic.maf.gz ...23765 lines
+    mutations after removing outlier samples 23649 
+    coding mutations 18832 ; 4000 ...appending somatic selection, spatial distribution and conservation stats ...
+    selection data ( 16689 )
+    spatial data ( 16684 )
+    conservation data ( 14225 )
+reformatting ...
+making predictions ...
+initializing ...
+finding outliers ...
+     TCGA/TCGA.THCA.mutect.13999735-2e70-439f-a6d9-45d831ba1a1a.DR-10.0.somatic.maf.gz ...10899 lines
+     mean ( 11 ), std ( 2 ), cutoffs ( 2.025653  -  55.2908 )
+     hypo- ( 11 ) ... hyper ( 14 )
+parsing aggregated calls ...
+    TCGA/TCGA.THCA.mutect.13999735-2e70-439f-a6d9-45d831ba1a1a.DR-10.0.somatic.maf.gz ...10899 lines
+    mutations after removing outlier samples 7319 
+    coding mutations 6106 ;  with matching seq 5988 
+    unmatched mutations: 118 in 96 genes, max cnt in unmatched genes ( DNAH10 : 4 )
+    total samples after removing outliers 467 
+ with matching seq 18660 
+    unmatched mutations: 172 in 125 genes, max cnt in unmatched genes ( FCGBP : 5 )
+    total samples after removing outliers 274 
+    mutations by sample 5468 x 467 ;unique mutations 5623 ;    mutations by sample 17661 x 274 ;unique mutations 18547 ;16000 ...unique genes 4207 
+computing somatic selection ...
+    folder output// ... genes.samples: 5468 ; summary.mut: 5623 ; map: 4207 ; data.all: 5468 
+    processing ...unique genes 9709 
+computing somatic selection ...
+    folder output// ... genes.samples: 17661 ; summary.mut: 18547 ; map: 9709 ; data.all: 17661 
+    processing ...12000 ...1000 ...2000 ...5000 ...1000 ...3000 ...4000 ...
+computing spatial distribution statistics ...
+computing conservational statistics ...
+17000 ...2000 ...
+computing spatial distribution statistics ...
+appending somatic selection, spatial distribution and conservation stats ...
+    selection data ( 4206 )
+    spatial data ( 4203 )
+    conservation data ( 2611 )
+reformatting ...
+making predictions ...
+13000 ...3000 ...6000 ...4000 ...computing conservational statistics ...
+5000 ...14000 ...6000 ...7000 ...appending somatic selection, spatial distribution and conservation stats ...
+    selection data ( 17101 )
+    spatial data ( 17099 )
+    conservation data ( 14780 )
+reformatting ...
+making predictions ...
+initializing ...
+finding outliers ...
+     TCGA/TCGA.TGCT.mutect.6f6a4290-b6be-49f5-be45-97d742957a9e.DR-10.0.somatic.maf.gz ...3198 lines
+     mean ( 15 ), std ( 2 ), cutoffs ( 4.90915  -  50.22814 )
+     hypo- ( 3 ) ... hyper ( 2 )
+parsing aggregated calls ...
+    TCGA/TCGA.TGCT.mutect.6f6a4290-b6be-49f5-be45-97d742957a9e.DR-10.0.somatic.maf.gz ...3198 lines
+    mutations after removing outlier samples 3046 
+    coding mutations 2413 ;  with matching seq 2383 
+    unmatched mutations: 30 in 26 genes, max cnt in unmatched genes ( PDZRN3 : 2 )
+    total samples after removing outliers 139 
+    mutations by sample 2331 x 139 ;unique mutations 2357 ;unique genes 2034 
+computing somatic selection ...
+    folder output// ... genes.samples: 2331 ; summary.mut: 2357 ; map: 2034 ; data.all: 2331 
+    processing ...7000 ...1000 ...2000 ...
+computing spatial distribution statistics ...
+computing conservational statistics ...
+8000 ...appending somatic selection, spatial distribution and conservation stats ...
+    selection data ( 2033 )
+    spatial data ( 2033 )
+    conservation data ( 1267 )
+reformatting ...
+making predictions ...
+15000 ...9000 ...8000 ...
+computing spatial distribution statistics ...
+computing conservational statistics ...
+appending somatic selection, spatial distribution and conservation stats ...
+    selection data ( 9708 )
+    spatial data ( 9700 )
+    conservation data ( 6620 )
+reformatting ...
+making predictions ...
+initializing ...
+finding outliers ...
+     TCGA/TCGA.READ.mutect.faa5f62a-2731-4867-a264-0e85b7074e87.DR-10.0.somatic.maf.gz ...64804 lines
+     mean ( 146 ), std ( 2 ), cutoffs ( 49.94177  -  293.2816 )
+     hypo- ( 1 ) ... hyper ( 14 )
+parsing aggregated calls ...
+    TCGA/TCGA.READ.mutect.faa5f62a-2731-4867-a264-0e85b7074e87.DR-10.0.somatic.maf.gz ...64804 lines
+    mutations after removing outlier samples 18214 
+    coding mutations 15023 ; 16000 ...9000 ... with matching seq 14842 
+    unmatched mutations: 181 in 104 genes, max cnt in unmatched genes ( DNAH10 : 9 )
+    total samples after removing outliers 122 
+    mutations by sample 13398 x 122 ;unique mutations 14591 ;unique genes 7833 
+computing somatic selection ...
+    folder output// ... genes.samples: 13398 ; summary.mut: 14591 ; map: 7833 ; data.all: 13398 
+    processing ...1000 ...17000 ...2000 ...10000 ...3000 ...
+computing spatial distribution statistics ...
+4000 ...5000 ...11000 ...computing conservational statistics ...
+6000 ...7000 ...
+computing spatial distribution statistics ...
+computing conservational statistics ...
+12000 ...appending somatic selection, spatial distribution and conservation stats ...
+    selection data ( 17491 )
+    spatial data ( 17491 )
+    conservation data ( 15333 )
+reformatting ...
+making predictions ...
+appending somatic selection, spatial distribution and conservation stats ...
+    selection data ( 7832 )
+    spatial data ( 7830 )
+    conservation data ( 5510 )
+reformatting ...
+making predictions ...
+13000 ...14000 ...15000 ...16000 ...17000 ...18000 ...
+computing spatial distribution statistics ...
+computing conservational statistics ...
+appending somatic selection, spatial distribution and conservation stats ...
+    selection data ( 18517 )
+    spatial data ( 18517 )
+    conservation data ( 16720 )
+reformatting ...
+making predictions ...
+[[1]]
+NULL
+
+[[2]]
+NULL
+
+[[3]]
+NULL
+
+[[4]]
+NULL
+
+[[5]]
+NULL
+
+[[6]]
+NULL
+
+[[7]]
+NULL
+
+[[8]]
+NULL
+
+[[9]]
+NULL
+
+[[10]]
+NULL
+
+[[11]]
+NULL
+
+[[12]]
+NULL
+
+[[13]]
+NULL
+
+[[14]]
+NULL
+
+[[15]]
+NULL
+
+[[16]]
+NULL
+
+[[17]]
+NULL
+
+[[18]]
+NULL
+
+[[19]]
+NULL
+
+[[20]]
+NULL
+
+[[21]]
+NULL
+
+[[22]]
+NULL
+
+[[23]]
+NULL
+
+[[24]]
+NULL
+
+[[25]]
+NULL
+
+[[26]]
+NULL
+
+[[27]]
+NULL
+
+[[28]]
+NULL
+
+[[29]]
+NULL
+
+[[30]]
+NULL
+
+[[31]]
+NULL
+
+[[32]]
+NULL
+
+[[33]]
+NULL
+
