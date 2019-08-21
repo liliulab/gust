@@ -27,7 +27,7 @@ Additional usages can be found via using "?gust" after installing the R gust pac
 GUST classifications of genes in 33 cancer types using the TCGA whole-exome sequencing data are available at https://www.liliulab.com/gust.
 
 ## Reference
-Manuscript of GUST is currently under review at Nucleic Acid Research. 
+Manuscript is available at BioRxiv and currently under review.Chandrashekar P, Ahmadinejad N, Wang J, Sekulic A, Egan JB, Asmann YW, Mayley C, Liu L (2019) Contextual Classifications of Cancer Driver Genes. bioRxiv 715508; doi: https://doi.org/10.1101/715508 . 
 
 ## Contributors
 Algorithm of GUST was developed by Li Liu. Database was developed by Pramod Chandrashekar. Please contact liliu at asu.edu for any questions or suggestions.
