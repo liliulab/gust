@@ -27,9 +27,9 @@ Additional usages can be found via using "?gust" after installing the R gust pac
 GUST classifications of genes in 33 cancer types using the TCGA whole-exome sequencing data are available at https://www.liliulab.com/gust.
 
 ## Reference
-Manuscript is available at BioRxiv and currently under review.
+Please cite our publication in Bioinformatics.
 
-Chandrashekar P, Ahmadinejad N, Wang J, Sekulic A, Egan JB, Asmann YW, Mayley C, Liu L (2019) Contextual Classifications of Cancer Driver Genes. bioRxiv 715508; doi: https://doi.org/10.1101/715508 . 
+Chandrashekar P, Ahmadinejad N, Sekulic A, Wang J, Kumar S, Maley C, Liu L. (2019) Somatic selection distinguishes oncogenes and tumor suppressor genes. Bioinformatics (in press) (advanced online publication https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/btz851/5625621)
 
 ## Contributors
 Algorithm of GUST was developed by Li Liu. Database was developed by Pramod Chandrashekar. Please contact liliu at asu.edu for any questions or suggestions.
