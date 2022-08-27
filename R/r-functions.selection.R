@@ -922,6 +922,8 @@ make.prediction <- function(output.folder, output.prefix) {
 	col.sub <- c('missense.obs.pct', 'truncating.obs.pct', 'max.missense', 'max.nonsense', 'score.peak', 'score.summit', 'max.peak.cnt', 'wt.stop.pct', 'fitch', 'fitch.summit')
 
 	predictors.all <- all.data
+	na.row = which(is.na(predictors.all), arr.idx=T)
+	if(length(na.row) > 0) predictors.all = predictors.all[-unique(na.rm[, 1]), ];
 	classes.pred <- predict(md, predictors.all[, col.sub])
 	classes.pred.prob <- predict(md, predictors.all[, col.sub], 'prob')
 	classes.pred.prob.max <- apply(classes.pred.prob, 1, max)
