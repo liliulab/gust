@@ -923,7 +923,7 @@ make.prediction <- function(output.folder, output.prefix) {
 
 	predictors.all <- all.data
 	na.row = which(is.na(predictors.all), arr.ind=T)
-	if(length(na.row) > 0) predictors.all = predictors.all[-unique(na.rm[, 1]), ];
+	if(length(na.row) > 0) predictors.all = predictors.all[-unique(na.row[, 1]), ];
 	classes.pred <- predict(md, predictors.all[, col.sub])
 	classes.pred.prob <- predict(md, predictors.all[, col.sub], 'prob')
 	classes.pred.prob.max <- apply(classes.pred.prob, 1, max)
