@@ -73,10 +73,14 @@ plot.mut <- function(mut.in.tumor, par=T, bw=5, main='', side=1) {
 #' @examples m=plot.this.one('TP53', './examples/', 'TCGA.ACC')
 plot.this.one <- function(symbol, folder, prefix, par=F, bw=5, main='', side=1) {
 	mut.in.tumor <- check.gene.mut(symbol, folder, prefix)
-	if(nchar(main)==0) {
-		main <- paste(symbol, gsub('TCGA.', '', prefix), sep=':');
+	if(!is.null(mut.in.tumor[[1]])) {
+		if(nchar(main)==0) {
+			main <- paste(symbol, gsub('TCGA.', '', prefix), sep=':');
+		}
+		plot.mut(mut.in.tumor, par=F, bw=bw, main=main, side=side)
+	} else {
+		cat('nothing to plot\n');
 	}
-	plot.mut(mut.in.tumor, par=F, bw=bw, main=main, side=side)
 	return(mut.in.tumor);
 }
 
