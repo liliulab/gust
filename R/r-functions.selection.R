@@ -980,11 +980,12 @@ check.gene.mut <- function(gene.symbol, folder, prefix) {
 		result <- rbind(result, agg)
 	}
 	
-	colnames(result) <- c('prot.pos', 'prot.ref', 'prot.alt', 'type', 'cnt', 'tumor');
-	result <- result[order(result$tumor, result$prot.pos), ]
-
-	aa.length <- max(anno.length[which(anno.length$symbol == gene.symbol), 'length']);
-	result$length <- aa.length;
+	if(!is.null(result)) {
+		colnames(result) <- c('prot.pos', 'prot.ref', 'prot.alt', 'type', 'cnt', 'tumor');
+		result <- result[order(result$tumor, result$prot.pos), ]
+		aa.length <- max(anno.length[which(anno.length$symbol == gene.symbol), 'length']);
+		result$length <- aa.length;
+	}
 	
 	map <- read.table(paste(folder, '/', prefix, '.symbol_2_cds_id.txt', sep=''), header=T, sep='\t', stringsAsFactors=F);
 	cds.id <- map[map$symbol==gene.symbol, 'cds.id'][1];
