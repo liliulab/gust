@@ -108,7 +108,7 @@ parse.aggregated.mut <- function(input.file.name, output.folder='', output.prefi
 	pattern.cds.1 <- str_match(mut.filtered$cds.comp, 'c\\.([0-9]+)([A-Z]+)>([A-Z]+)')
 	pattern.cds.2 <- str_match(mut.filtered$cds.comp, 'c\\.([0-9]+)([ins|del|dup|\\+])(.+)')
 	pattern.cds.3 <- str_match(mut.filtered$cds.comp, 'c\\.([0-9]+)_([0-9]+)([ins|del|dup|\\+])(.+)')
-	pattern.prot.1 <- str_match(mut.filtered$prot.comp, 'p\\.([A-Z*])([0-9]+)([A-Z*])$')
+	pattern.prot.1 <- str_match(mut.filtered$prot.comp, 'p\\.([A-Z*])([0-9]+)([A-Z*=])$')
 	pattern.prot.2 <- str_match(mut.filtered$prot.comp, 'p\\.([A-Z*])([0-9]+)([A-Z])fs(.+)')
 	pattern.prot.3 <- str_match(mut.filtered$prot.comp, 'p\\.([A-Z*])([0-9]+)([A-Z*a-z_0-9]+)')
 	pattern.codon <- str_match(mut.filtered$codon, '([A-Za-z\\-]+)/([A-Za-z]+)')
@@ -127,6 +127,8 @@ parse.aggregated.mut <- function(input.file.name, output.folder='', output.prefi
 	mut.filtered[idx, c('prot.pos', 'prot.ref', 'prot.alt')] <- pattern.prot.2[idx, c(3, 2, 4)]
 	idx <- which(is.na(mut.filtered$prot.alt) & mut.filtered$type %in% c('inf_ins', 'inf_del'));
 	mut.filtered[idx, c('prot.pos', 'prot.ref', 'prot.alt')] <- pattern.prot.3[idx, c(3, 2, 4)]
+	idx <- which(mut.filtered$prot.alt == '=')
+	mut.filtered[idx, 'prot.alt'] = mut.filtered[idx, 'prot.ref']
 				
 	e <- t(apply(mut.filtered[, c('cds.id', 'cds.pos')], 1, function(x) { i<-which(seq_bp$cds.id.2==x[1]); r <- c(); if(length(i)==0) { r <- c('', '', ''); } else { p<-as.numeric(x[2]); s=seq_bp[i, 'cds.seq']; prev=substr(s, p-1, p-1); current=substr(s, p, p); post=substr(s, p+1, p+1); r<-c(prev, current, post);} }))
 	f <- unlist(apply(mut.filtered[, c('prot.id', 'prot.pos')], 1, function(x) { i<-which(seq_aa$pep.id.2==x[1]); r <- c(); if(length(i)==0) { r <- c(''); } else { p<-as.numeric(x[2]); s=seq_aa[i, 'pep.seq']; current=substr(s, p, p); r<-c(current); } }))
