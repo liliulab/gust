@@ -29,7 +29,7 @@ GUST classifications of genes in 33 cancer types using the TCGA whole-exome sequ
 ## Reference
 Please cite our publication in Bioinformatics.
 
-Chandrashekar P, Ahmadinejad N, Sekulic A, Wang J, Kumar S, Maley C, Liu L. (2019) Somatic selection distinguishes oncogenes and tumor suppressor genes. Bioinformatics (in press) (advanced online publication https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/btz851/5625621)
+Chandrashekar P, Ahmadinejad N, Sekulic A, Wang J, Kumar S, Maley C, Liu L. (2019) Somatic selection distinguishes oncogenes and tumor suppressor genes. Bioinformatics 36(6):1712–1717. PMID: 32176769
 
 ## Contributors
 Algorithm of GUST was developed by Li Liu. Database was developed by Pramod Chandrashekar. Please contact liliu at asu.edu for any questions or suggestions.
